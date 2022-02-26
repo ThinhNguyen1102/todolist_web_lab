@@ -120,7 +120,7 @@ button {
 }
 
 .menu-bar__content-item h5 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .menu-bar__footer *,
@@ -143,6 +143,10 @@ button {
   align-items: center;
   gap: 20px;
   font-size: 18px;
+}
+
+.menu-bar__footer a h5 {
+  font-weight: 500;
 }
 
 .menu-bar__is-active {
@@ -416,6 +420,7 @@ button {
 .accordion-header span {
   overflow: hidden;
   width: 35%;
+  height: 25px;
 }
 
 .accordion-content {

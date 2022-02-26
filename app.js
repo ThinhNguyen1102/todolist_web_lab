@@ -78,7 +78,6 @@ window.addEventListener("load", function () {
       numCb = function () {},
       activeCb = function () {}
     ) {
-      console.log(storage);
       storage.forEach((item) => {
         creCb(item, numCb, activeCb);
       });
