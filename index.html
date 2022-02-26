@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu-bar">
+        <div class="wrapper__menu-bar">
+          <div class="menu-bar__text-logo-box">
+            <h1 class="menu-bar__text-logo">.ToDo</h1>
+          </div>
+
+          <div class="menu-bar__content">
+            <ul class="menu-bar__content-list">
+              <a href="#" class="menu-bar__content-item">
+                <i class="fas fa-home"></i>
+                <h5>Overview</h5>
+              </a>
+              <a href="#" class="menu-bar__content-item">
+                <i class="fas fa-chart-area"></i>
+                <h5>Start</h5>
+              </a>
+              <a href="#" class="menu-bar__content-item">
+                <i class="fas fa-folder"></i>
+                <h5>Project</h5>
+              </a>
+              <a href="#" class="menu-bar__content-item">
+                <i class="fas fa-comment"></i>
+                <h5>Chat</h5>
+              </a>
+              <a href="#" class="menu-bar__content-item">
+                <i class="fas fa-calendar"></i>
+                <h5>Calendar</h5>
+              </a>
+            </ul>
+          </div>
+
+          <div class="menu-bar__footer">
+            <a href="#" class="footer__setting">
+              <i class="fas fa-cog"></i>
+              <h5>setting</h5>
+            </a>
+            <a href="#" class="footer__logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <h5>logout</h5>
+            </a>
+          </div>
+        </div>
+        <div class="menu-bar-line"></div>
+      </div>
+      <div class="main">
+        <div class="main__header">
+          <div class="main__header__nav">
+            <div class="nav__left">
+              <div class="box-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="box-input">
+                <input type="text" placeholder="Search" />
+              </div>
+            </div>
+            <div class="nav__right">
+              <div class="about">
+                <i class="fas fa-question-circle"></i>
+              </div>
+              <div class="notifi">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="user-name">
+                <h5>thinh</h5>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <div class="user-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__content">
+          <div class="content__header">
+            <h1 class="content__header-title">Project</h1>
+            <div class="content__header-time">
+              <h5>This Week</h5>
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </div>
+
+          <div class="main__content-todolist">
+            <div class="content-todolist-box todo-task is-show-listTask">
+              <div class="todolist-box__header">
+                <h4 class="todolist-box__header-title">To do</h4>
+                <h4 class="num-of-task">0</h4>
+              </div>
+              <button class="add-task">
+                <i class="fas fa-plus"></i>
+              </button>
+              <div
+                class="todolist-box__tasks todo-box"
+                data-status="To Do"
+              ></div>
+            </div>
+            <div class="content-todolist-box in-proress-task is-close-listTask">
+              <div class="todolist-box__header">
+                <h4 class="todolist-box__header-title">In Proress</h4>
+                <h4 class="num-of-task">0</h4>
+              </div>
+              <button class="add-task">
+                <i class="fas fa-plus"></i>
+              </button>
+              <div
+                class="todolist-box__tasks progress-box"
+                data-status="In Progress"
+              ></div>
+            </div>
+            <div class="content-todolist-box completed-task is-close-listTask">
+              <div class="todolist-box__header">
+                <h4 class="todolist-box__header-title">Completed</h4>
+                <h4 class="num-of-task">0</h4>
+              </div>
+              <button class="add-task">
+                <i class="fas fa-plus"></i>
+              </button>
+              <div
+                class="todolist-box__tasks completed-box"
+                data-status="Completed"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-menu-mb">
+        <button class="todo-btn" data-tus="todo-task">
+          <i class="fas fa-list-ul is-active"></i>
+          <h5 class="is-active">Todo</h5>
+        </button>
+        <button class="progress-btn" data-tus="in-proress-task">
+          <i class="fas fa-list-ol"></i>
+          <h5>Progress</h5>
+        </button>
+        <button class="completed-btn" data-tus="completed-task">
+          <i class="fas fa-tasks"></i>
+          <h5>Completed</h5>
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/c72f9ee90e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
